@@ -1,0 +1,42 @@
+clion 
+
+
+步骤一： 打开usr/share/applications；
+cd /usr/share/applications
+
+步骤二： 创建clion.desktop文件
+
+gedit clion.desktop 
+
+步骤三：
+[Desktop Entry]
+Encoding=UTF-8
+
+Name=CLion
+
+Comment=clion-2019.2
+
+Exec=/home/chris/clion-2019.2/bin/clion.sh
+
+Icon=/home/chris/clion-2019.2/bin/clion.svg
+
+Categories=Application;Development;Java;IDE
+
+Version=2019.2
+
+Type=Application
+
+#Terminal=1
+
+
+
+
+
+4
+ubuntu 18.04 中 PyCharm 当全拼输入2~3个汉字时，会被强行打断，然后就无法继续输入(也无法切换中英文)，并且汉字下会有下划线。
+
+    点击菜单 “Help | Edit Custom VM options…”
+    添加 -Drecreate.x11.input.method=true 到最后一行
+    重启编辑器
+
+
